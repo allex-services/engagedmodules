@@ -1,0 +1,21 @@
+{
+  "name": "allex_engagedmodulesservice",
+  "version": "0.1.0",
+  "description": "EngagedModulesService",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.hers.rs:allex_services/engagedmodules.git"
+  },
+  "keywords": [
+    "ecosystem:allex",
+    "Service",
+    "EngagedModules"
+  ],
+  "author": "HERS Belgrade",
+  "license": "ISC"
+}
+
