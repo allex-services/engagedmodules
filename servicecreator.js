@@ -1,6 +1,7 @@
 function createEngagedModulesService(execlib,ParentServicePack){
   var ParentService = ParentServicePack.Service,
-    dataSuite = execlib.dataSuite;
+    dataSuite = execlib.dataSuite,
+    MemoryStorage = dataSuite.MemoryStorage;
 
   function factoryCreator(parentFactory){
     return {
@@ -17,7 +18,7 @@ function createEngagedModulesService(execlib,ParentServicePack){
     ParentService.prototype.__cleanUp.call(this);
   };
   EngagedModulesService.prototype.createStorage = function(storagedescriptor){
-    return ParentService.prototype.createStorage.call(this,storagedescriptor);
+    return new MemoryStorage(storagedescriptor);
   };
   return EngagedModulesService;
 }
