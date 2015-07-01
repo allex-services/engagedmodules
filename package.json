@@ -1,6 +1,6 @@
 {
   "name": "allex_engagedmodulesservice",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "EngagedModulesService",
   "main": "index.js",
   "scripts": {
