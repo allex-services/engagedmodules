@@ -1,7 +1,6 @@
-function createEngagedModulesService(execlib,ParentServicePack){
+function createEngagedModulesService(execlib,ParentService){
   'use strict';
-  var ParentService = ParentServicePack.Service,
-    dataSuite = execlib.dataSuite,
+  var dataSuite = execlib.dataSuite,
     MemoryStorage = dataSuite.MemoryStorage;
 
   function factoryCreator(parentFactory){
